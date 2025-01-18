@@ -23,8 +23,8 @@ lora_urls = dict(
     I2V5B_final_i38800_nearest_lora_weights                  = base_url+'I2V5B_final_i38800_nearest_lora_weights.safetensors',
     I2V5B_resum_blendnorm_0degrad_i13600_webvid_lora_weights = base_url+'I2V5B_resum_blendnorm_0degrad_i13600_webvid_lora_weights.safetensors',
     T2V2B_RDeg_i30000_lora_weights                           = base_url+'T2V2B_RDeg_i30000_lora_weights.safetensors',
-    T2V5B_blendnorm_i18000_envato_lora_weights               = base_url+'T2V5B_blendnorm_i18000_envato_lora_weights.safetensors',
-    T2V5B_blendnorm_i25000_envato_nearest_lora_weights       = base_url+'T2V5B_blendnorm_i25000_envato_nearest_lora_weights.safetensors',
+    T2V5B_blendnorm_i18000_DATASET_lora_weights               = base_url+'T2V5B_blendnorm_i18000_DATASET_lora_weights.safetensors',
+    T2V5B_blendnorm_i25000_DATASET_nearest_lora_weights       = base_url+'T2V5B_blendnorm_i25000_DATASET_nearest_lora_weights.safetensors',
 )
 
 dtype=torch.bfloat16
