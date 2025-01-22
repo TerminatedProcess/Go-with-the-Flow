@@ -6,6 +6,7 @@ from matplotlib.patches import Polygon as Polygon
 import cv2
 git_import('CommonSource')
 import rp.git.CommonSource.noise_warp as nw
+from easydict import EasyDict
 
 
 def select_polygon(image):
@@ -216,7 +217,8 @@ def animate_polygon(image, polygon, path, scales, rotations,interp=cv2.INTER_LIN
 
         frames.append(rgba_image)
 
-    return gather_vars("frames transformed_polygons")
+    # return gather_vars("frames transformed_polygons")
+    return EasyDict(frames=frames,transformed_polygons=translated_polygons)
 
 
 def apply_transformation(polygon, scale, rotation, origin):
