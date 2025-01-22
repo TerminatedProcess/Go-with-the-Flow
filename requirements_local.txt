@@ -7,3 +7,6 @@ fire
 moviepy
 icecream
 matplotlib
+art
+torchvision
+torch

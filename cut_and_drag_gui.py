@@ -218,7 +218,7 @@ def animate_polygon(image, polygon, path, scales, rotations,interp=cv2.INTER_LIN
         frames.append(rgba_image)
 
     # return gather_vars("frames transformed_polygons")
-    return EasyDict(frames=frames,transformed_polygons=translated_polygons)
+    return EasyDict(frames=frames,transformed_polygons=transformed_polygons)
 
 
 def apply_transformation(polygon, scale, rotation, origin):
