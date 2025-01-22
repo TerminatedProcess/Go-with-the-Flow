@@ -95,12 +95,14 @@ Adjust folder paths, prompts, and other hyperparameters as needed. The output wi
 <a name="todo"></a>
 ## :clipboard: TODO
 
-- [x] Upload All Models
+- [x] Upload All CogVideoX Models
 - [x] Upload Cut-And-Drag Inference Code  
 - [x] Release to Arxiv
 - [ ] Depth-Warping Inference Code
 - [ ] T2V Motion Transfer Code
 - [ ] ComfyUI Node
+- [ ] Release 3D-to-Video Inference Code + Blender File
+- [ ] Upload AnimateDiff Model
 - [ ] Replicate Instance
 - [ ] Fine-Tuning Code
 
