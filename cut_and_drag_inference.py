@@ -20,11 +20,11 @@ pipe_ids = dict(
 )
 
 # From a bird's-eye view, a serene scene unfolds: a herd of deer gracefully navigates shallow, warm-hued waters, their silhouettes stark against the earthy tones. The deer, spread across the frame, cast elongated, well-defined shadows that accentuate their antlers, creating a mesmerizing play of light and dark. This aerial perspective captures the tranquil essence of the setting, emphasizing the harmonious contrast between the deer and their mirror-like reflections on the water's surface. The composition exudes a peaceful stillness, yet the subtle movement suggested by the shadows adds a dynamic layer to the natural beauty and symmetry of the moment.
-base_url = 'https://huggingface.co/OneOverZero/Go-With-The-Flow/resolve/main/'
+base_url = 'https://huggingface.co/Eyeline-Research/Go-with-the-Flow'
 lora_urls = dict(
     I2V5B_final_i30000_lora_weights                          = base_url+'I2V5B_final_i30000_lora_weights.safetensors',
     I2V5B_final_i38800_nearest_lora_weights                  = base_url+'I2V5B_final_i38800_nearest_lora_weights.safetensors',
-    I2V5B_resum_blendnorm_0degrad_i13600_webvid_lora_weights = base_url+'I2V5B_resum_blendnorm_0degrad_i13600_webvid_lora_weights.safetensors',
+    I2V5B_resum_blendnorm_0degrad_i13600_DATASET_lora_weights = base_url+'I2V5B_resum_blendnorm_0degrad_i13600_DATASET_lora_weights.safetensors',
     T2V2B_RDeg_i30000_lora_weights                           = base_url+'T2V2B_RDeg_i30000_lora_weights.safetensors',
     T2V5B_blendnorm_i18000_DATASET_lora_weights               = base_url+'T2V5B_blendnorm_i18000_DATASET_lora_weights.safetensors',
     T2V5B_blendnorm_i25000_DATASET_nearest_lora_weights       = base_url+'T2V5B_blendnorm_i25000_DATASET_nearest_lora_weights.safetensors',
