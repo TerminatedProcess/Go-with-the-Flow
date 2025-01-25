@@ -90,7 +90,8 @@ def select_path(image, polygon, num_frames=49):
     rotations = []
 
     def interpolate_transformations(n_points):
-        scales = np.linspace(1, scale_slider.val, n_points)
+        # scales = np.linspace(1, scale_slider.val, n_points)
+        scales = np.exp(np.linspace(0, np.log(scale_slider.val), n_points))
         rotations = np.linspace(0, rot_slider.val, n_points)
         return scales, rotations
 
