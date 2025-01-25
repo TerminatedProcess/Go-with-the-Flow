@@ -31,6 +31,8 @@ Go-with-the-Flow is an easy and efficient way to control the motion patterns of 
 
 We simply fine-tune a base model — requiring no changes to the original pipeline or architecture, except: instead of using pure i.i.d. Gaussian noise, we use **warped noise** instead. Inference has exactly the same computational cost as running the base model.
 
+If you create something cool with our model - and want to share it on our website - email rburgert@cs.stonybrook.edu. We will be creating a user-generated content section, starting with whomever submits the first video! 
+
 If you like this project, please give it a ★!
 
 <a name="quick-start-cut-and-drag-motion-control"></a>
@@ -98,6 +100,7 @@ Adjust folder paths, prompts, and other hyperparameters as needed. The output wi
 - [x] Upload All CogVideoX Models
 - [x] Upload Cut-And-Drag Inference Code  
 - [x] Release to Arxiv
+- [ ] Google Colab for people without GPU's
 - [ ] Depth-Warping Inference Code
 - [ ] T2V Motion Transfer Code
 - [ ] ComfyUI Node
