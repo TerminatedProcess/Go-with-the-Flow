@@ -103,6 +103,7 @@ Adjust folder paths, prompts, and other hyperparameters as needed. The output wi
 - [ ] Google Colab for people without GPU's
 - [ ] Depth-Warping Inference Code
 - [ ] T2V Motion Transfer Code
+- [ ] I2V Motion Transfer Code (allows for first-frame editing)
 - [ ] ComfyUI Node
 - [ ] Release 3D-to-Video Inference Code + Blender File
 - [ ] Upload AnimateDiff Model
