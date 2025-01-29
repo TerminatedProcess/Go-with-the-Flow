@@ -89,7 +89,7 @@ After completion, an MP4 file will be generated. You'll need to move this file t
         --prompt "A duck splashing" \
         --output_mp4_path "output.mp4" \
         --device "cuda" \
-        --num_inference_steps 5
+        --num_inference_steps 30
     ```
 
 Adjust folder paths, prompts, and other hyperparameters as needed. The output will be saved as `output.mp4`.
