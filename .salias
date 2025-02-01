@@ -1,4 +1,4 @@
-alias run='clear;python cut_and_drag_gui.py'
+alias run='clear;python gradio_app.py'
 alias warp='python make_warped_noise.py $1 --output_folder output'
 alias mkvenv='python -m venv .venv;source .venv/bin/activate;kk;ei'
 

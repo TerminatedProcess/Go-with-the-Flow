@@ -26,3 +26,7 @@ ffmpeg-python
 # PyTorch packages
 torch
 torchvision
+
+# Additional dependencies for Gradio UI
+gradio==4.44.1
+Pillow

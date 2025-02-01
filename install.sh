@@ -39,9 +39,16 @@ pip install --upgrade pip
 echo "Installing all requirements..."
 pip install -r requirements_mryan.txt
 
+# Create directory structure
+echo "Creating workspace directory..."
+mkdir -p workspace
 
 echo "Installation complete! Virtual environment is activated."
+echo "Directory structure created:"
+echo "- workspace/     (for processed images and outputs)"
+echo
 echo "You can now run:"
-echo "python cut_and_drag_gui.py  # For the animation template GUI"
+echo "python gradio_app.py                   # For the Gradio web interface"
+echo "python cut_and_drag_gui.py             # For the animation template GUI"
 echo "python make_warped_noise.py <video_path> --output_folder noise_warp_output_folder  # For warping noise"
 echo "python cut_and_drag_inference.py noise_warp_output_folder --prompt \"Your prompt\" --output_mp4_path output.mp4 --device cuda  # For inference"
