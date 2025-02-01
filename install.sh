@@ -7,29 +7,11 @@ set -e
 # Required Python version
 REQUIRED_PYTHON="3.11.10"
 
-# Check if pyenv is available
-if command -v pyenv >/dev/null 2>&1; then
-    echo "Setting Python version with pyenv..."
-    pyenv local $REQUIRED_PYTHON
-else
-    echo "pyenv not found, checking system Python version..."
-fi
+# Set and verify Python version
+echo "Setting Python version with pyenv..."
+pyenv local $REQUIRED_PYTHON
 
-# Verify Python version
 CURRENT_PYTHON=$(python -c "import platform; print(platform.python_version())")
-
-if [ "$CURRENT_PYTHON" != "$REQUIRED_PYTHON" ]; then
-    echo "Error: This project requires Python $REQUIRED_PYTHON"
-    echo "Current Python version: $CURRENT_PYTHON"
-    if ! command -v pyenv >/dev/null 2>&1; then
-        echo "Please install pyenv or set up Python $REQUIRED_PYTHON manually"
-    else
-        echo "Please install Python $REQUIRED_PYTHON with:"
-        echo "pyenv install $REQUIRED_PYTHON"
-    fi
-    exit 1
-fi
-
 echo "Using Python $CURRENT_PYTHON"
 
 # Check for active virtual environment or existing directories
@@ -54,30 +36,9 @@ source .venv/bin/activate
 echo "Upgrading pip..."
 pip install --upgrade pip
 
-echo "Installing GitPython..."
-pip install GitPython
+echo "Installing all requirements..."
+pip install -r requirements_mryan.txt
 
-echo "Installing einops..."
-pip install einops
-
-echo "Installing PyTorch with CUDA support..."
-pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-exit
-
-echo "Installing remaining local requirements..."
-# Exclude torch and torchvision since we just installed them
-grep -v "torch\|torchvision" requirements_local.txt | pip install -r /dev/stdin
-
-echo "Installing additional requirements..."
-pip install diffusers transformers accelerate peft sentencepiece
-
-# ffmpeg-python
-pip install ffmpeg-python
-
-# GPU Requirements
-echo '-----------------------------------------------------------'
-echo "Installing GPU requirements"
-pip install -r requirements.txt
 
 echo "Installation complete! Virtual environment is activated."
 echo "You can now run:"

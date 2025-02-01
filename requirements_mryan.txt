@@ -1,14 +1,7 @@
---index-url https://download.pytorch.org/whl/cu118
-torch
-torchvision
-GitPython
-einops
-diffusers
-transformers
-accelerate
-peft
-sentencepiece
-ffmpeg-python
+# Add CUDA-enabled PyTorch index while keeping default PyPI index
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+# Base requirements for GUI (CPU)
 rp
 easydict
 oldest-supported-numpy
@@ -19,3 +12,17 @@ moviepy
 icecream
 matplotlib
 art
+
+# Additional GPU requirements
+GitPython
+einops
+diffusers
+transformers
+accelerate
+peft
+sentencepiece
+ffmpeg-python
+
+# PyTorch packages
+torch
+torchvision

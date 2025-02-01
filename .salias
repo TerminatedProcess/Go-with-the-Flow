@@ -1,5 +1,6 @@
 alias run='clear;python cut_and_drag_gui.py'
 alias warp='python make_warped_noise.py $1 --output_folder output'
+alias mkvenv='python -m venv .venv;source .venv/bin/activate;kk;ei'
 
 function cpgoflow {
     # copy the following files from the current directory to ../Go-with-the-Flow directory
