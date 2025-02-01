@@ -1,0 +1,13 @@
+alias run='clear;python cut_and_drag_gui.py'
+alias warp='python make_warped_noise.py $1 --output_folder output'
+
+function cpgoflow {
+    # copy the following files from the current directory to ../Go-with-the-Flow directory
+    gfd='../Go-with-the-Flow/';
+    cp .gitignore $gfd;
+    cp install.sh $gfd;
+    cp -rf lora_models $gfd;
+    cp .python-version $gfd;
+    cp .salias $gfd;
+    echo "Done"; 
+}
